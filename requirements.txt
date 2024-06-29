@@ -150,3 +150,4 @@ wrapt==1.14.1
 xarray==2023.10.1
 z3-solver==4.9.1.0
 zipp==3.17.0
+python_version >=3.10,<3.11
