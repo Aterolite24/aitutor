@@ -20,7 +20,7 @@ cryptography==42.0.8
 dask==2023.10.0
 data-reader==0.0.8
 datashader==0.15.2
-datashape==0.5.2
+datashape
 debugpy==1.8.0
 decorator==5.1.1
 distlib==0.3.7
