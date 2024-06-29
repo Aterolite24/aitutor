@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Tutor Chat</title>
+    {% load static %}
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'main/styles.css' %}">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="chat">
+        <div class="chat-title">
+            <h1>AI Tutor</h1>
+            <h2>zephyr_whispher</h2>
+        </div>
+        <div id="chat-container" class="messages">
+            <!-- Messages will be dynamically added here -->
+        </div>
+        <form id="message-form" class="message-box" method="post">{% csrf_token %}
+            <textarea type="text" id="message" name="message" class="message-input" placeholder="Type message..."></textarea>
+            <button type="submit" class="message-submit">Send</button>
+        </form>
+    </div>
+    <script src="{% static 'main/script.js' %}"></script>
+</body>
+</html>
